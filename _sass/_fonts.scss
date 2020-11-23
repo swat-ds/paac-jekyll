@@ -1,0 +1,25 @@
+/* larsseit */
+@font-face {
+    font-family: 'Larsseit';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Larsseit'), local('Larsseit'),
+         url('../fonts/Larsseit.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+
+  }
+@font-face {
+    font-family: 'Larsseit';
+    font-style: bold;
+    font-weight: 800;
+    src: local('Larsseit'), local('Larsseit Bold'),
+         url('../fonts/Larsseit-Bold.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+
+  }
+@font-face {
+    font-family: 'Larsseit';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Larsseit'), local('Larsseit Medium'),
+         url('../fonts/Larsseit-Medium.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+
+  }
