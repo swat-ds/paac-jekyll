@@ -12,14 +12,20 @@
 
 
     <!-- styles -->
-    
+
     <!-- Mapbox and map style -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.css' rel='stylesheet' />
 
     <!-- Custom style -->
-    <link href="{{ 'assets/css/main.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ 'assets/css/main.css' | relative_url }}" rel="stylesheet"> 
+    {% if page.id == 'js' %}
+    <link rel="stylesheet" type="text/css" href="../assets/css/c3.min.css"/>
+    {% endif %}
+    {% if page.id == 'data' %}
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.22/b-1.6.5/b-colvis-1.6.5/fh-3.1.7/datatables.min.css"/>
+    {% endif %}
 
     <!-- Matomo -->
     <!-- TODO: Add Matomo script -->
-  </head>
+</head>

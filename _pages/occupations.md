@@ -1,9 +1,19 @@
 ---
-title: Visualizations
-permalink: /viz/
+title: Occupations
+permalink: /occupations/
 id: js
 layout: default
 ---
+
+<div class="row">
+    <h3>Exploring Occupations in the Census</h3>
+</div>
+
+<div class="row" markdown="1">
+
+What kinds of stories might the 1847 data allow us to tell? Students took the occupation column in order to begin exploring what kinds of occupations were most common among recorded genders in households surveyed as well as how those map onto labor categories.
+
+</div> 
 
 <!--Add viz 1-->
 <div id="occupation" class="container">
@@ -16,6 +26,7 @@ in the legend to hide those bars. This provides a broad
 overview of the occupation data.
 </p>
 </div>
+
 <div class="container">
 <span class="graph-title">15 Most Common Jobs in Philadelphia's 1847 Census</span>
 <div id="chart"></div>
@@ -60,45 +71,3 @@ comprehensible categories for comparison.
 </div>
 <!--link to top of page-->
 <a class="btn btn-danger btn-sm top" href="viz.html" role="button">Back to top</a>
-
-<!--------------------------------------------------------------------->
-<!--Katie's viz, tabulated data for future implementation-->
-
-<!-- <div id="population" class="container">
-<div class="row align-items-center viz"> -->
-<!-- <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5"> -->
-<!-- <h2>Tabular Data</h2>
-<p>Explore the visualizations in tabular form here!
-</p> -->
-<!-- </div> -->
-<!-- </div> -->
-<!-- <div class="col-6 mx-auto col-md-6 order-md-2"> -->
-<!-- <div class="container">
-<span class="graph-title">Visualization 1: 15 Most Common Jobs in Philadelphia's 1847 Census</span>
-<div id="chart5"></div>
-</div> -->
-<!-- </div> -->
-<!-- </div>
-<a class="btn btn-danger btn-sm top" href="viz.html" role="button">Back to top</a> -->
-
-<!-- <div id="population" class="container">
-<div class="row align-items-center viz">
-<h2>Age Distribution Data by Region</h2>
-<p> This graph depicts the age distribution of the African-American
-population by region.
-</p>
-</div>
-<div class="container">
-<div class="col-md-6 order-md-1 text-center text-md-left pr-md-5 viz">
-
-</div>
-<div id="legend-age-population"></div>
-<div id="age-population"></div>
-</div>
-</div> -->
-<!-- <div id="literacy" class="container">
-<div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
-<h2>Another Cool Viz</h2>
-<p>More to come...</p>
-</div>
-</div> -->

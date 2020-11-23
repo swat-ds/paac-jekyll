@@ -1,46 +1,31 @@
 ---
-title: Data
-permalink: /data/
-layout: default
+title: Data 
+permalink: /data/ 
+id: data 
+layout: default 
 ---
+
+<div class="row">
+    <h3>Explore the Data</h3>
+</div>
 
 <!--add data table-->
 <div class="row align-items-center" markdown="1">
 
-## Explore the Data
-
-The following data were taken from the original csv file that
-    the 2002 exhibit uses, created by digitizing the 1847 census data
-    collected by hand. The data categories shown were cleaned using
-    OpenRefine, Python scripts, and Excel tools. Subsets of the data
-    were used to create the visualizations housed on this site. Toggle
-    the drop-down menu to search by different parameters.
+The following data were taken from the original csv file that the 2002 exhibit uses, created by digitizing the 1847 census data collected by hand. The data categories shown were cleaned using OpenRefine, Python scripts, and Excel tools. Subsets of the data were used to create the visualizations housed on this site.
 
 </div>
 
-<!--category drop down to search by-->
-<div id="search-container">
-<div class="input-group">
-<select class="custom-select" id="inputGroupSelect04" aria-label="select filter column">
-<option value="ID" selected>ID</option>
-<option value="Last Name">Last Name</option>
-<option value="First Name">First Name</option>
-<option value="Residence Street">Residence Street</option>
-<option value="Male Occupation 1">Male Occupation 1</option>
-<option value="Female Occupation 1">Female Occupation 1</option>
-<option value="Region">Region</option>
-</select>
-</div>
-
+<div class="row mb-5">
 <!--button to download csv-->
-<div id="download">
-<a class="btn btn-danger btn-sm download" href="Data/test.csv" download="1847_census.csv" role="button">Download the CSV file</a>
-<p>We encourage you to download and explore this dataset further,
-normalize the columns even more, and create more visualizations.</p>
-</div>
+<a class="btn btn-danger btn-sm github col-4" href="https://github.com/swat-ds/datasets/tree/master/1847census" role="button">Download the dataset on GitHub <img class="col-2 float-right" alt="github octocat logo" src="../assets/img/pinned-octocat.svg"/></a>
+
 </div>
 
-<div id="table-container">
+<div class="row">
 
-<div id="chart4"></div>
+    <table id="datatable" class="display table-striped" width="100%">
+        <thead></thead>
+    </table>
+
 </div>

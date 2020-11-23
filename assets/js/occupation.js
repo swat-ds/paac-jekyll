@@ -1,11 +1,16 @@
 /* Visualizations for 1847 Census Occupation Data
 Alice Huang, 7/17/19 */
 
-// bar chart for cumulative occ data, only showing shared occs btwn male/female (viz 1)
-var chart = c3.generate({
+// Refactored @bulbil 2020-11-23
+
+$(function(){
+
+  // bar chart for cumulative occ data, only showing shared occs btwn male/female (viz 1)
+
+const chart = c3.generate({
     bindto: '#chart',
     data: {
-      url: 'Data/top_common_jobs.csv',
+      url: '../assets/data/top_common_jobs.csv',
       x: 'OCC',
       type: 'bar',
       groups: [
@@ -46,18 +51,34 @@ var chart = c3.generate({
 
 // bar chart 2, categorized occupations
 
+
+const cats = { "ag": "Agricultural Pursuits",
+"dp": "Domestic & Personal Service",
+"la": "Laborer",
+"ma": "Manufacturing & Mechanical Pursuits",
+"ps": "Professional Service",
+"tr": "Trade & Transportation",
+"mto": "More than One",
+"niw": "Not in Work"}
+
 let chart3,
     currCategory = 'ag';
 
-// agricultural category loaded initially
-drawCategoryChart(' Data/m_ag.csv', 'Agricultural Pursuits')
+// helpers
 
-function drawCategoryChart(file, category) {
+// return data file path for current category
+function getDataPath(category) {
+  return "../assets/data/m_" + String(category) + ".csv"
+}
+
+// draw chart based on current category
+function drawCategoryChart(category) {
+
   chart3 = c3.generate({
       bindto: '#chart3',
       data: {
-        url: file,
-        x: category,
+        url: getDataPath(category),
+        x: cats[category],
         type: 'bar',
         colors: {
           'MALE': '#8856a7',
@@ -98,57 +119,24 @@ function drawCategoryChart(file, category) {
 
 }
 
-// reload graph with different file
-function reload(file) {
-  setTimeout(function() {
-      chart3.load({
-        unload: true,
-        url: file,
-      });
-  }, 300);
-}
-
-// event listener for dropdown category menu
+// add event listener for dropdown category menu
 d3.select('.input-group select').on('change', function() {
+
   item = d3.select(this).property('value'); // get drop-down selection
-  if(item == 'mto') {
-    drawCategoryChart(' Data/m_mto.csv', 'More than One') // redraw chart with new file
-    currCategory = 'mto' // update the category selected
-    d3.select('#title').text('More than One Occupation')
-  } else if (item == 'dp') {
-    drawCategoryChart(' Data/m_dp.csv', 'Domestic & Personal Service')
-    currCategory = 'dp'
-    d3.select('#title').text('Domestic & Personal Service Occupations')
-  } else if (item == 'ag') {
-    drawCategoryChart(' Data/m_ag.csv', 'Agricultural Pursuits')
-    currCategory = 'ag'
-    d3.select('#title').text('Agricultural Pursuits Occupations')
-  } else if (item == 'ma') {
-    drawCategoryChart(' Data/m_ma.csv', 'Manufacturing & Mechanical Pursuits')
-    currCategory = 'ma'
-    d3.select('#title').text('Manufacturing & Mechanical Pursuits Occupations')
-  } else if (item == 'niw') {
-    drawCategoryChart(' Data/m_niw.csv', 'Not in Work')
-    currCategory = 'niw'
-    d3.select('#title').text('Not in Work "Occupations"')
-  } else if (item == 'ps') {
-    drawCategoryChart(' Data/m_ps.csv', 'Professional Service')
-    currCategory = 'ps'
-    d3.select('#title').text('Professional Service Occupations')
-  } else if (item == 'tr') {
-    drawCategoryChart(' Data/m_tr.csv', 'Trade & Transportation')
-    currCategory = 'tr'
-    d3.select('#title').text('Trade & Transportation Occupations')
-  } else {
-    drawCategoryChart(' Data/m_la.csv', 'Laborer')
-    currCategory = 'la'
-    d3.select('#title').text('Laborer Occupations')
-  }
+  drawCategoryChart(item)
+  currCategory = item;
+  d3.select('#title').text(cats[item])
+
 })
 
-// graph title, which updates when dropdown changes 
+// initialize chart
+drawCategoryChart(currCategory)
+
+// initialize chart title
 d3.select('#title').append('text')
    .attr('class','label')
    .attr('text-anchor','end')
    .attr('font-size','14px')
    .text('Agricultural Pursuits Occupations')
+
+})
