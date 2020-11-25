@@ -1,4 +1,5 @@
 //Helen Huh 2019 
+// refactored 2020-11-25 @bulbil
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiMTg0N2NlbnN1cyIsImEiOiJjanllcnY1MmYwM3doM2JudnZkdDl4eWs1In0.F_3cfs4al_haneDBGnscIw';
 var map = new mapboxgl.Map({
@@ -54,21 +55,21 @@ map.on('load', function () {
 });
 //add listener for mousemove event, identify which region is at location of cursor, and update information window
 map.on('mousemove', function (e) {
-    var region = map.queryRenderedFeatures(e.point, {
+
+    const labels = ["people surveyed", "male intemperate", "female intemperate", "can read", "can write", "born slaves", "attend religious meetings", "not attend religious meetings", "belong to temperance societies"];
+
+    let region = map.queryRenderedFeatures(e.point, {
         layers: ['1847census_city-ax73r3', "1847census_springgarden-7nvrq9", "1847census_southwark-6rjwko", "1847census_northernliberties-3qpqea"]
     });
     if (region.length > 0) {
-        document.getElementById('pd').innerHTML = '<h3><strong>' + region[0].properties.name + '</strong></h3><p><strong><em>'
-            + region[0].properties["people surveyed"] + '</strong> African Americans surveyed</em></p><p><strong><em>'
-            + region[0].properties["male intemperate"] + '</strong> males intemperate</em></p><p><strong><em>'
-            + region[0].properties["female intemperate"] + '</strong> females intemperate</em></p><p><strong><em>'
-            + region[0].properties["can read"] + '</strong> can read</em></p><p><strong><em>'
-            + region[0].properties["can write"] + '</strong> can write</em></p><p><strong><em>'
-            + region[0].properties["born slaves"] + '</strong> born slaves</em></p><p><strong><em>'
-            + region[0].properties["attend religious meetings"] + '</strong> attend religious meetings</em></p><p><strong><em>'
-            + region[0].properties["not attend religious meetings"] + '</strong> do not attend religious meetings</em></p><p><strong><em>'
-            + region[0].properties["belong to temperance societies"] + '</strong> belong to temperance societies</em></p>';
+
+        let regionList = labels.map(d => ('<li class="list-group-item"><span>' + region[0].properties[d] + '</span>' + d + '</li>'));
+        
+        regionList.unshift( '<li class="list-group-item">' + region[0].properties.name + '</li>' );
+
+        document.querySelector('#pd ul').innerHTML = regionList.join(' ');
+
     } else {
-        document.getElementById('pd').innerHTML = '<p>Hover over a region!</p>';
+        // document.getElementById('pd').innerHTML = '<p>Hover over a region!</p>';
     }
 });

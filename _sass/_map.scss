@@ -1,47 +1,16 @@
-/* body {
-  margin: 0;
-  padding: 0;
-}
-h2,
-h3 {
-  margin: 10px;
-  font-size: 1.2em;
-}
-h3 {
-  font-size: 1em;
-}
-p {
-  font-size: 0.85em;
-  margin: 10px;
-  text-align: left;
-} */
-.viz p {
-    margin-left: 80px;
-    margin-right: 80px;
-  }
-  
-  .viz h2 {
-    margin-left: 70px;
-    margin-right: 70px;
-  }
-  /**
+/**
   * Create a position for the map
   * on the page */
   #map {
-    position: absolute;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 80%;
-    height: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    // position: absolute;
+    // width: 80%;
+    // height: 80%;
+
+    min-width: 100%;
+    min-height: 500px;
+    height: 100%;
   }
   
-  h2 {
-    // font-size: 14px;
-    // margin-top: 10px;
-  }
   /**
   Set rules for how the map overlays
   (information box, legend, and slider) will be displayed
@@ -58,16 +27,20 @@ p {
   }
   #features {
     top: 0;
-    height: 295px;
+    // height: 295px;
     margin-top: 265px;
     width: 280px;
+
+    height: 100%;
   }
   #opacity-slider{
     width: 280px;
     height: 75px;
-    margin-top: 565px;
+    // margin-top: 565px;
     top: 0;
-    padding: 10px;
+    padding: 2em 1em;
+    font-size: $font-size-base * .75;
+
   }
   #legend {
     margin-left: 11%;
@@ -79,7 +52,7 @@ p {
     top: 0;
     margin-top: 620px;
     width: 280px;
-    // font-size: 12px;
+    font-size: $font-size-base * .75;
   }
   .legend-key {
     display: inline-block;
@@ -107,12 +80,21 @@ p {
     margin: 0;
     cursor: ew-resize;
   }
-  
-  p, span {
-    // font-size: 11px;
-  }
-  
-  h2 {
-    // font-size: 18px;
+
+  .map-overlay #pd {
+
+    li {
+      font-size: $font-size-base * .75;
+      padding: $list-group-item-padding-y * .75 $list-group-item-padding-x * .75;
+    }
+
+    li:first-of-type, 
+    li span {
+      font-weight: bold;
+    }
+
+    li span {
+      margin-right: $font-size-base * .25;
+    }
   }
   
