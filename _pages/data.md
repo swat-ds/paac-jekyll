@@ -18,7 +18,7 @@ The following data were taken from the original csv file that the 2002 exhibit u
 
 <div class="row mb-5">
 <!--button to download csv-->
-<a class="btn btn-danger btn-sm github col-4" href="https://github.com/swat-ds/datasets/tree/master/1847census" role="button">Download the dataset on GitHub <img class="col-2 float-right" alt="github octocat logo" src="../assets/img/pinned-octocat.svg"/></a>
+<a class="btn btn-danger btn-sm github col-3" href="https://github.com/swat-ds/datasets/tree/master/1847census" role="button"><span>Download the dataset on GitHub</span><img class="float-right" alt="github octocat logo" src="../assets/img/pinned-octocat.svg"/></a>
 
 </div>
 

@@ -45,5 +45,10 @@ Content advisors: Celia Caust-Ellenbogen and Jordan Landes
 
 <div class="row">
 <!--link to github-->
-<a class="btn btn-danger btn-sm github col-3" href="https://github.com/swat-ds/1847-sof-black-census" role="button">Code available on GitHub <img class="col-3 float-right" alt="github octocat logo" src="../assets/img/pinned-octocat.svg"/></a>
+<a class="btn btn-danger btn-sm github col-3" href="https://github.com/swat-ds/1847-sof-black-census" role="button"><span>Code available on GitHub</span><img class="float-right" alt="github octocat logo" src="../assets/img/pinned-octocat.svg"/></a>
+</div>
+
+<div class="row">
+<p class="ds-logo">
+<em>Site supported by <a href="http://ds.swarthmore.edu/">Digital Scholarship / Swarthmore College Libraries</a></em></p>
 </div>
