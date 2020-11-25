@@ -6,7 +6,7 @@ layout: default
 ---
 
 <div class="row">
-    <h3>Exploring Occupations in the Census</h3>
+    <h2>Exploring Occupations in the Census</h2>
 </div>
 
 <div class="row" markdown="1">
@@ -15,10 +15,14 @@ What kinds of stories might the 1847 data allow us to tell? Students took the oc
 
 </div> 
 
+<div id="occupation">
+
 <!--Add viz 1-->
-<div id="occupation" class="container">
-<div class="row align-items-center viz">
-<h2>Occupation Data Bar Graph</h2>
+<div class="row">
+<h3>Occupation Data Bar Graph</h3>
+</div>
+
+<div class="row">
 <p>This chart graphs the top 15 most common jobs among males and females
 surveyed in the 1847 census. Hover over each bar to see the frequency
 count for males and females for each occuption. Click on each gender
@@ -27,20 +31,22 @@ overview of the occupation data.
 </p>
 </div>
 
-<div class="container">
-<span class="graph-title">15 Most Common Jobs in Philadelphia's 1847 Census</span>
-<div id="chart"></div>
+<div class="row">
+<p class="graph-title">15 Most Common Jobs in Philadelphia's 1847 Census</p>
+</div>
+<div class="row" id="chart"></div>
 <div id="null-jobs"><span>other common "occupations"</span></div> <!--transparent rectangle-->
-</div>
-</div>
-<!--Link to top of page-->
-<a class="btn btn-danger btn-sm top" href="viz.html" role="button" id="b1">Back to top</a>
 
-<!--------------------------------------------------------------------->
-<!--viz 2-->
-<div id="occupation2" class="container">
-<div class="row align-items-center viz">
-<h2>Occupation Data Bar Graph by Category</h2>
+</div>
+
+<!--Add Viz 2-->
+<div id="occupation2">
+
+<div class="row">
+<h3>Occupation Data Bar Graph by Category</h3>
+</div>
+
+<div class="row">
 <p>This chart graphs the most common jobs (15 at most) for males and females, respectively,
 in each of 8 job categories. Hover over each bar to see the frequency
 count for each occupation. Click on each gender
@@ -48,14 +54,11 @@ in the legend to hide those bars. This visualization breaks up the many jobs int
 comprehensible categories for comparison.
 </p>
 </div>
-<div class="container">
-<div id="title"></div>
-<div id="chart3"></div>
-<div class="row align-items-center">
 
+<div class="row">
 <!--job category dropdown-->
-<div class="input-group" id="occ">
-<select class="custom-select" id="inputGroupSelect04" aria-label="select occupation category">
+<div class="input-group col-3" id="occ">
+<select class="custom-select form-control" id="inputGroupSelect04" aria-label="select occupation category">
 <option value="ag" selected>Agricultural Pursuits</option>
 <option value="dp">Domestic & Personal Service</option>
 <option value="la">Laborer</option>
@@ -67,7 +70,10 @@ comprehensible categories for comparison.
 </select>
 </div>
 </div>
+
+<div class="row" id="chart3"></div>
+
 </div>
-</div>
+
 <!--link to top of page-->
-<a class="btn btn-danger btn-sm top" href="viz.html" role="button">Back to top</a>
+<a class="btn btn-danger btn-sm top" href="#" role="button">Back to top</a>

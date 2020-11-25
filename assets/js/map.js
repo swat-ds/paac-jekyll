@@ -67,7 +67,7 @@ map.on('mousemove', function (e) {
         
         regionList.unshift( '<li class="list-group-item">' + region[0].properties.name + '</li>' );
 
-        document.querySelector('#pd ul').innerHTML = regionList.join(' ');
+        document.querySelector('#features ul').innerHTML = regionList.join(' ');
 
     } else {
         // document.getElementById('pd').innerHTML = '<p>Hover over a region!</p>';

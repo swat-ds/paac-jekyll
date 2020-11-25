@@ -63,8 +63,8 @@ a.navbar-brand {
 }
 
 #title {
-  margin-bottom: 30px;
-  margin-left: 40px;
+  // margin-bottom: 30px;
+  // margin-left: 40px;
 }
 
 .description {
@@ -133,13 +133,8 @@ a.navbar-brand {
   // font-size: 14px;
 }
 
-.viz {
-  margin-top: 20px;
-}
-
 .breadcrumb {
   background-color: white;
-  // font-size: 13px;
   padding-left: 0;
 }
 
@@ -168,31 +163,30 @@ a.navbar-brand {
   margin-bottom: 40px;
 }
 
-.btn.top {
-  float: right;
-  margin-right: 180px;
-  margin-top: -210px;
-}
+// .btn.top {
+//   float: right;
+//   margin-right: 180px;
+//   margin-top: -210px;
+// }
 
-#b1 {
-  margin-top: -160px;
-}
+// #b1 {
+//   margin-top: -160px;
+// }
 
-#occupation2, #occupation {
-  margin-bottom: 150px;
-}
+// #occupation2, #occupation {
+//   margin-bottom: 150px;
+// }
 
 a.link {
   color: $swat-red;
 }
 
-#occ #inputGroupSelect04 {
-  margin-left: 100px;
-  border: 1px solid black;
-}
-
-.input-group {
-  width: 350px;
+#occ {
+  padding-left: 0;
+  margin-bottom: 1rem;
+  #inputGroupSelect04 {
+    border: 1px solid black;
+  }
 }
 
 #about h2 {

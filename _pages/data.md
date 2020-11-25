@@ -6,7 +6,7 @@ layout: default
 ---
 
 <div class="row">
-    <h3>Explore the Data</h3>
+    <h2>Explore the Data</h2>
 </div>
 
 <!--add data table-->

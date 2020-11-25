@@ -15,21 +15,27 @@ This map depicts the four regions of Philadelphia surveyed in the 1847 census. H
 
 </div>
 
-<div class="container viz">
+<div class="viz">
 <!--add map overlay layers for legend, etc.-->
 <div id='map'></div>
-<div class='map-overlay' id='features'><div id='pd'>
+
+<div class='col-3 p-2 float-right map-overlay' id='features'>
         
-        <div id='opacity-slider'>
-                <label for="slider" aria-describedby="slider">1847 Map (opacity): <span id='slider-value'>0%</span></label>
-                <input id='slider' type='range' min='0' max='100' step='0' value='0'>
+        <ul class="list-group list-group-flush"><label class="p-2 m-0">Hover over a region for more information.</label></ul>
+
+        <div class="input-group mx-2 p-2 col-11" id='opacity-slider'>
+                <label for="slider" id="slider-desc">1847 Historic Map Overlay</label>
+                <div>
+                <input id='slider' class="form-control" type='range' min='0' max='100' step='10' value='0' aria-describedby="slider-desc">
+                </div>
+                <span>Select opacity (<span id='slider-value'>0%</span>)</span>
         </div>
         
-        
-        <ul class="list-group list-group-flush">Hover over a region</ul></div>
 
 </div>
-<div class='map-overlay' id='legend'></div>
+<div class="col-3 float-left m-3 map-overlay" id='legend'>
+<span>Census Region</span>
+</div>
 
 <nav id="menu"></nav>
 </div>

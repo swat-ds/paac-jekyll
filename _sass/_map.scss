@@ -8,58 +8,85 @@
 
     min-width: 100%;
     min-height: 500px;
-    height: 100%;
+    height: 70vh;
+    padding: auto 0;
+
   }
-  
+
   /**
   Set rules for how the map overlays
   (information box, legend, and slider) will be displayed
   on the page. */
   .map-overlay{
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    label, li, span {
+      font-size: $font-size-base * .75;
+    }
+  }
+  
+  #features {
+
+    position: relative;
+    top: -70vh;
+    padding-top: 1rem;
     background: rgba(255, 255, 255, 0.8);
-    margin-right: 11%;
     overflow: auto;
     border-radius: 3px;
-    /* width: 300px; */
-  }
-  #features {
-    top: 0;
-    // height: 295px;
-    margin-top: 265px;
-    width: 280px;
+    min-height: 70vh;
 
-    height: 100%;
+    // top: 0;
+    // // height: 295px;
+    // margin-top: 265px;
+    // width: 280px;
+
+    // height: 100%;
   }
+
   #opacity-slider{
-    width: 280px;
-    height: 75px;
-    // margin-top: 565px;
-    top: 0;
-    padding: 2em 1em;
-    font-size: $font-size-base * .75;
-
-  }
-  #legend {
-    margin-left: 11%;
-    left: 0px;
-    padding: 10px;
+    position: absolute;
+    bottom: 2rem;
+    flex-direction: column;
+    background-color: #fff;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    line-height: 18px;
-    height: 100px;
-    top: 0;
-    margin-top: 620px;
-    width: 280px;
-    font-size: $font-size-base * .75;
+    border-radius: 3px;
+
+
+
+    label {
+      font-weight: bold;
+    }
+
+    span {
+      font-style: italic;
+    }
+
+    input {
+      cursor: ew-resize;
+      width: 90%;
+    }
   }
+
+  #legend {
+
+    position: relative;
+    bottom: 11rem;
+    padding: 1rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    font-size: $font-size-base * .75;
+    line-height: $line-height-base * 1.5;
+    background-color: #fff;
+    border-radius: 3px;
+
+    span:first-of-type {
+      font-weight: bold;
+    }
+
   .legend-key {
     display: inline-block;
     border-radius: 20%;
     width: 10px;
     height: 10px;
     margin-right: 5px;
+  }
   }
   .map-overlay .map-overlay-inner {
     background-color: #fff;
@@ -69,22 +96,29 @@
     margin-bottom: 10px;
   }
   .map-overlay label {
-    display: block;
-    margin: 0 0 10px;
+    // display: block;
+    // margin: 0 0 10px;
   }
   .map-overlay input {
-    background-color: transparent;
-    display: inline-block;
-    width: 100%;
-    position: relative;
-    margin: 0;
-    cursor: ew-resize;
+    // background-color: transparent;
+    // display: inline-block;
+    // width: 100%;
+    // position: relative;
+    // margin: 0;
+    // cursor: ew-resize;
   }
 
-  .map-overlay #pd {
+  #features {
+    ul {
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
+    }
+    ul label {
+      font-style: italic;
+      background-color: #fff;
+    }
 
     li {
-      font-size: $font-size-base * .75;
       padding: $list-group-item-padding-y * .75 $list-group-item-padding-x * .75;
     }
 

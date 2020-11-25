@@ -5,7 +5,7 @@ layout: default
 ---
 
 <div class="row">
-    <h3>2002 Exhibit</h3>
+    <h2>2002 Exhibit</h2>
 </div>
 
 <!--project acknowledgements-->
