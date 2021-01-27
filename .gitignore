@@ -5,3 +5,5 @@ _site
 vendor
 .bundle
 
+assets/.DS_Store
+assets/img/.DS_Store
