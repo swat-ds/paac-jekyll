@@ -2,7 +2,7 @@ title: Philadelpha African-American Census 1847
 email: digitalscholarship@swarthmore.edu
 description: >-
   Explore the 1847 census of African-Americans in Philadelphia conducted by the Society of Friends in 1847.
-baseurl: "/paac" # the subpath of your site, e.g. /blog
+baseurl: "/dev/1847" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  swat-ds
 
