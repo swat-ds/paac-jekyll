@@ -58,6 +58,7 @@ comprehensible categories for comparison.
 <div class="row">
 <!--job category dropdown-->
 <div class="input-group col-3" id="occ">
+    <label>
 <select class="custom-select form-control" id="inputGroupSelect04" aria-label="select occupation category">
 <option value="ag" selected>Agricultural Pursuits</option>
 <option value="dp">Domestic & Personal Service</option>
@@ -68,6 +69,7 @@ comprehensible categories for comparison.
 <option value="mto">More than One</option>
 <option value="niw">Not in Work</option>
 </select>
+   </label>
 </div>
 </div>
 

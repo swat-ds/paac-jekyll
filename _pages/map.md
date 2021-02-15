@@ -17,7 +17,7 @@ This map depicts the four regions of Philadelphia surveyed in the 1847 census. H
 
 <div class="viz">
 <!--add map overlay layers for legend, etc.-->
-<div id='map'></div>
+<div id='map' tabindex="0"></div>
 
 <div class='col-3 p-2 float-right map-overlay' id='features'>
         
