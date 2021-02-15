@@ -1,6 +1,7 @@
 language: ruby
+dist: bionic
 rvm:
- - 2.6.3
+ - 2.6.5
 
 env:
   global:
@@ -21,6 +22,8 @@ deploy:
   upload_dir: dev/1847
   detect_encoding: true
   default_text_charset: "utf-8"
+  on:
+    branch: dev
 branches:
     only:
         - dev
