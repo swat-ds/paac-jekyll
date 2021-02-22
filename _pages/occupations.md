@@ -34,7 +34,7 @@ overview of the occupation data.
 <div class="row">
 <p class="graph-title">15 Most Common Jobs in Philadelphia's 1847 Census</p>
 </div>
-<div class="row" id="chart"><diagram aria-label=“Interactive bar graph">/div>
+<div class="row" id="chart"><img src="chart" alt="Interactive Bar Graph">/div>
 <div id="null-jobs"><span>other common "occupations"</span></div> <!--transparent rectangle-->
 
 </div>
