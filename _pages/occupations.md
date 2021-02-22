@@ -32,9 +32,9 @@ overview of the occupation data.
 </div>
 
 <div class="row">
-<p class="graph-title">15 Most Common Jobs in Philadelphia's 1847 Census</p>
+<p class="graph-title">15 Most Common Jobs in Philadelphia's 1847 Census<aria-label= “Interactive bar graph"></p>
 </div>
-<div class="row" id="chart">aria-label= “Interactive bar graph"/div>
+<div class="row" id="chart">/div>
 <div id="null-jobs"><span>other common "occupations"</span></div> <!--transparent rectangle-->
 
 </div>
