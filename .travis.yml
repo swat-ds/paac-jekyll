@@ -1,38 +1,40 @@
-language: ruby
-rvm:
- - 2.6.3
+# language: ruby
+# dist: bionic
+# rvm:
+#  - 2.6.5
 
-env:
-  global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # JEKYLL_ENV=production
+# env:
+#   global:
+#     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # JEKYLL_ENV=production
 
-# script:
-#  - bundle exec jekyll build
+# # script:
+# #  - bundle exec jekyll build
 
-cache: bundler
+# cache: bundler
 
-# deploy:
-#   provider: s3
-#   access_key_id: ${S3_ACCESS_KEY_ID}
-#   secret_access_key: ${S3_SECRET}
-#   skip_cleanup: true
-#   bucket: "sc-lib-ds-static"
-#   local_dir: _site
-#   upload_dir: dev/1847
-#   detect_encoding: true
-#   default_text_charset: "utf-8"
-# branches:
-#     only:
-#         - dev
+# # deploy:
+# #   provider: s3
+# #   access_key_id: ${S3_ACCESS_KEY_ID}
+# #   secret_access_key: ${S3_SECRET}
+# #   skip_cleanup: true
+# #   bucket: "sc-lib-ds-static"
+# #   local_dir: _site
+# #   upload_dir: dev/1847
+# #   detect_encoding: true
+# #   default_text_charset: "utf-8"
+# # branches:
+# #     only:
+# #         - dev
 
 
-notifications:
-  email:
-    recipients:
-      - digitalscholarship@swarthmore.edu
-    on_success: never
-    on_failure: always
-  slack:
-    on_success: always
-    on_failure: always
-    secure: McLnT+wO18IeC7npVaqrUxxseKxIQIQECg255TlAxdXiAOKxLWX2sf4/dNPp/rB627cTvvE2WfAs5Mt1h0TPR7mnBGlgLromhtcjEOGDedyHM2mQYpjkwG/lkGhhifLCmcjwfuBQH2S2sbU0+o9TPr3/aFNK3TOIvKwefH9MztGuerla+yWpnH56Vw2Gu/RhSFWReLhoPVacVUvst43P4Ey5dmofq4KwbKfprw9rVV8oFjh7VMoZgmOc++mSXVaaj02/qOpO00jJXo8ZR44KKKzR3Ikjd1G2X7AgK7SYvPeVoy99yX0SC4FPeZBOK2fsonFWA3bJrDnZns9YBQwQ+65aiUGJen6/EZ62iZPWhPJVLJF37sKXSVrS0zJHSzYGwt3MH7vWUm77DDKfI6lzhDf/8mdpg82bOOMzuX1SUcf7HBgT6dRSns3ARW9Ko15rY4ZlAKAW4EjRgDHHl5UuUES5Krg8GfMZNPHNNnZ2SC3mwOmbcX4VQ2av7hoSTV/AuVmGQ5aCATWr1KUPYGfTK+C2w2U7Zh2lYbfbitKuSX37v//smWRWwCYrcPQcYRWgeHuwNVUKJqJwcXLCKWzZflm/0paQmnkn+vWjNSDfFLJ5lMcCyXh/z+GgaBc9C/U34fcamOlCr8JV3naxCDV99mavt5FNV3h0Pcl8mR422wA=
+# notifications:
+#   email:
+#     recipients:
+#       - digitalscholarship@swarthmore.edu
+#     on_success: never
+#     on_failure: always
+#   slack:
+#     secure: OOnglkFTeqGKtWbUHr7iU/QJljxxcd4SaZqo6C8KN+ZyOQnZccWII7hBgkdcWBAL55SD12zS5ZVvPIwJPtec46Mmu/ZhTfTvEZ7UAW3PSs8VwxAV8bxPf5bkMyLCbA6Bha/EoLDm2nodSpkTa8/s5Ugk7UnmUN7SCzkAftemhc9bKoutkf5i+YncUH6WtFd1uTeqqh6q7PdpqSjyDrR/0Nj+9ShICxQBpsrDz5/Obm1QG7AFRMyTRcFjuAGGG2bFrAKnKr7LlICpCOkrAVXbpI7gYv36rva9vAk5hOIIGvJZ4r2Q8lmF2Id152whDRtfvLWsmWe0Q7n64squNP1mC7t44XVuWPeIzJQ8GCnvpZxF1t8rZGrG55BUxLlDa/dGtNs3+P/ScQqeJwFT7UslfY3cQEXyCPvm0VDn1VnhpuiEx6FL9/MFrmzCbF+0nIyWOO3xmoZ5rKyUUJ9b+Pl+7i3uar7aLjMpEi4gACQFYhdcJQM8TAc8NP3C9zb/Wuh34baY/6YA8iPE/l9Vl44nN9S5fT9Xzwh8WqYyH6bD73ru94LgSChqAAVs/V4bQh4Vq/Pgg8t8tXtc4AJIWP0QOAJhRmTYSKSUKKmEY7j8K278aDIWQqks41FuWZeZA/4ZBk3oQEyaHCXYAfwNCzyeH519u7oUzT43So+7+yzK2rg=
+#     on_success: always
+#     on_failure: always
+

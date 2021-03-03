@@ -34,7 +34,7 @@ overview of the occupation data.
 <div class="row">
 <p class="graph-title">15 Most Common Jobs in Philadelphia's 1847 Census</p>
 </div>
-<div class="row" id="chart"></div>
+<div class="row" id="chart"><aria-label= “Interactive bar graph”></div>
 <div id="null-jobs"><span>other common "occupations"</span></div> <!--transparent rectangle-->
 
 </div>
@@ -58,6 +58,7 @@ comprehensible categories for comparison.
 <div class="row">
 <!--job category dropdown-->
 <div class="input-group col-3" id="occ">
+    <label>
 <select class="custom-select form-control" id="inputGroupSelect04" aria-label="select occupation category">
 <option value="ag" selected>Agricultural Pursuits</option>
 <option value="dp">Domestic & Personal Service</option>
@@ -68,10 +69,11 @@ comprehensible categories for comparison.
 <option value="mto">More than One</option>
 <option value="niw">Not in Work</option>
 </select>
+   </label>
 </div>
 </div>
 
-<div class="row" id="chart3"></div>
+<div class="row" id="chart3"><aria-label= “Interactive bar graph”></div>
 
 </div>
 
