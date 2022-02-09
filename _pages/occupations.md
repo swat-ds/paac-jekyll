@@ -13,7 +13,7 @@ layout: default
 
 What kinds of stories might the 1847 data allow us to tell? Students took the occupation column in order to begin exploring what kinds of occupations were most common among recorded genders in households surveyed as well as how those map onto labor categories.
 
-</div> 
+</div>
 
 <div id="occupation">
 
@@ -25,7 +25,7 @@ What kinds of stories might the 1847 data allow us to tell? Students took the oc
 <div class="row">
 <p>This chart graphs the top 15 most common jobs among males and females
 surveyed in the 1847 census. Hover over each bar to see the frequency
-count for males and females for each occuption. Click on each gender
+count for males and females for each occupation. Click on each gender
 in the legend to hide those bars. This provides a broad
 overview of the occupation data.
 </p>
