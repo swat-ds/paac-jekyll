@@ -11,7 +11,7 @@ layout: default
 <!--Add project intro-->
 <div class="row" markdown="1">
 
-The manuscript 1847 census, containing forty-three elements of information for each of more than five thousand households in Philadelphia, was used to prepare <a href="https://raw.githubusercontent.com/swat-ds/datasets/main/1847census/paac1847censusreport.pdf"><em>A Statistical Inquiry into the Condition of the People of Colour of the City and Districts of Philadelphia</em></a> (1849), a report of forty-four pages. This is aggregated data-—the raw data of the census manipulated in particular ways for a particular purpose. The existence of the raw data allows modern researchers to reaggregate the data—to ask new questions and not be bound by the conceptions of social scientists of 160 years past.
+The manuscript 1847 census, containing forty-three elements of information for each of more than four thousand households in Philadelphia, was used to prepare <a href="https://raw.githubusercontent.com/swat-ds/datasets/main/1847census/paac1847censusreport.pdf"><cite>A Statistical Inquiry into the Condition of the People of Colour of the City and Districts of Philadelphia</cite></a> (1849), a report of forty-four pages. This is aggregated data-—the raw data of the census manipulated in particular ways for a particular purpose. The existence of the raw data allows modern researchers to reaggregate the data—to ask new questions and not be bound by the conceptions of social scientists of 160 years past.
 
 The data also tells stories. The compilers were interested in the broad picture of the condition of the African American population. But each individual household record tells a story—how one particular family fared in 1847: what occupation, what property, what education, what pay. The information puts faces, or at least individual stories, to what is otherwise aggregate data. We have information on families nearly destitute, living in conditions of poverty; we have families apparently prospering. We can move from the micro to the macro view of the African American experience.
 
@@ -34,13 +34,13 @@ Friends Historical Library
 April 23, 2002
 </div>
 
-<div class="row"> <h2>View the Original Ledgers</h2></div>
+<div class="row"> <h3>View the Original Ledgers</h3></div>
 
 <div class="row" markdown="1">
 Scans of the original census ledgers are available through the <a href="https://digitalcollections.tricolib.brynmawr.edu/collections/philadelphia-african-american-census-1847">Tri-Co Digital Collections portal</a>.
 </div>
 
-<div class="row"> <h1>About this Site</h1></div>
+<div class="row"> <h2>About this Site</h2></div>
 
 <figure class="figure">
   <a href="https://web.archive.org/web/20190421015959/https://www.swarthmore.edu/Library/friends/paac1847/main.html"><img src="../assets/img/oldweb.jpg" class="img-thumbnail rounded" alt="2002 Exhibit Site Webpage" />
