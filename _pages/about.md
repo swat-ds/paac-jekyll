@@ -53,3 +53,15 @@ Scans of the original census ledgers are available through the <a href="https://
  In 2002, Friends Historical Library of Swarthmore College launched an exhibit website about the 1847 Census, including a searchable database of census entries. In 2019, Friends Historical Library partnered with student fellows through [Swarthmore Projects for Educational Exploration & Development (SPEED)](https://www.swarthmore.edu/its/swarthmore-projects-educational-exploration-and-development-speed-program) to update and enhance the website: cleaning up the original data; creating a more accessible, interactive website; and designing visualizations to illuminate interesting findings of the census. In 2020, [Digital Scholarship at Swarthmore](https://www.swarthmore.edu/libraries/digital-scholarship) completed the work begun by the SPEED students and the 2002 site was retired. In 2022, two [Black Genealogy Fellows](https://blackgenealogy.domains.swarthmore.edu/) at Friends Historical Library transcribed additional census records from Blockley Almshouse.
 
 </div>
+
+<!-- Add list of related projects-->
+
+<div class="row"> <h2>Related Projects</h2></div>
+
+<div class="row" markdown="1">
+
+- The "[Philadelphia Social History Project](https://doi.org/10.3886/ICPSR03805.v1): Pennsylvania Abolition Society and Society of Friends Manuscript Census Schedules, 1838, 1847, 1856," led by Theodore Hershberg, uses data from the 1847 census and from similar censuses conducted in 1838 and 1856.
+
+- The [Black Metropolis](https://www.blackdocents.com/1838blackmetropolis) project from the Black Docents Collective of Philadelphia uses data from a similar census conducted in 1838 to paint a vivid picture of Free Black life in the city.
+
+</div>
