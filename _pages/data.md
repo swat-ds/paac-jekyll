@@ -29,3 +29,9 @@ The following data were taken from the original csv file that the 2002 exhibit u
     </table>
 
 </div>
+
+<div class="row align-items-center" markdown="1">
+
+This table does not include data from the Blockley Almshouse due to differences in data structure. However, you can [download the Blockley dataset](https://github.com/swat-ds/datasets/blob/f40dd72219ce3670ee091fc4f55ff0e365cbc567/1847census/sofaac-blockleycensus.csv) on Github.
+
+</div>
