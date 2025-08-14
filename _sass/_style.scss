@@ -189,3 +189,18 @@ th, td {
   font-size: $font-size-base * .75;
   padding-left: 1rem;
 }
+
+.github {
+  margin-bottom: 1rem;
+}
+
+#datatable_wrapper, #datatable_wrapper * {
+  max-width: inherit;
+} 
+
+.dt-buttons:before {
+  content: "Show/hide column groups:";
+  text-align: right;
+  max-width: 10%;
+  margin-right: .167em;
+}

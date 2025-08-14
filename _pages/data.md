@@ -16,19 +16,16 @@ The following data were taken from the original csv file that the 2002 exhibit u
 
 </div>
 
-<div class="row mb-5">
-<!--button to download csv-->
-<a class="btn btn-danger btn-sm github col-3" href="https://github.com/swat-ds/datasets/tree/main/1847census" role="button"><span>Download the dataset on GitHub</span><img class="float-right" alt="github octocat logo" src="../assets/img/pinned-octocat.svg"/></a>
-
-</div>
-
 <div class="row">
-
-    <table id="datatable" class="display table-striped" width="100%">
-        <thead></thead>
-    </table>
+<!--button to download csv-->
+<a class="btn btn-danger btn-sm github " href="https://github.com/swat-ds/datasets/tree/main/1847census" role="button"><span style="margin-right: 0.5rem;">Download the dataset on GitHub</span><img class="float-center" alt="github octocat logo" src="../assets/img/pinned-octocat.svg"/></a>
 
 </div>
+
+<table id="datatable" class="display table-striped" width="100%">
+    <thead></thead>
+</table>
+
 
 <div class="row align-items-center" markdown="1">
 
