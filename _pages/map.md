@@ -11,7 +11,7 @@ layout: default
 <!--add map-->
 <div class="row" markdown="1">
 
-This map depicts the four regions of Philadelphia surveyed in the 1847 census. Hover over each region to see aggregate statistics for the individuals living in that region. Use the opacity slider to see how the street names from 1847 map onto present-day streets and regions.
+This map depicts the four regions of Philadelphia surveyed in the 1847 census. Hover over each region to see aggregate statistics for the individuals living in that region. Use the opacity slider to see how the street names from <a target="_blank" href="https://davidrumsey.oldmapsonline.org/maps/e80a03ee-f14b-5d79-a873-7af6c2610149/">an 1847 map</a> onto present-day streets and regions.
 
 </div>
 
