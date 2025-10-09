@@ -62,7 +62,7 @@ function dataTableInit(rows){
             search: 'Filter:'
         },
         order: {
-            name: 'Name', dir: 'asc'
+            name: 'ID', dir: 'asc'
         },
         fixedHeader: {
             footer: true
